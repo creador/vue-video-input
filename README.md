@@ -23,7 +23,6 @@ yarn add vue-video-input
 <template>
   <div class="hello">    
     <video-input 
-      ref="pictureInput"
       ancho="600" 
       alto="600" 
       radio="0"
