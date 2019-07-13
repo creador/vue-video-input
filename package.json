@@ -1,0 +1,49 @@
+{
+  "name": "vue-video-input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vue-video-input.vue",
+  "dependencies": {
+    "daycaca": "*",
+    "underscore": "*",
+    "gif.js": "*",
+    "global": "^4.4.0",
+    "poi": "9"
+  },
+  "devDependencies": {
+    "jest-serializer-vue": "^0.3.0",
+    "vue-server-renderer": "*",
+    "babel-preset-env": "^1.6.1",
+    "vue": "*",
+    "babel-core": "^6.26.0",
+    "vue-template-compiler": "*",
+    "vue-jest": "*",
+    "jest": "^22.4.0",
+    "@vue/test-utils": "^1.0.0-beta.12"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "poi build --prod"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
+  },
+  "unpkg": "umd/vue-video-input.js",
+  "jsdelivr": "umd/vue-video-input.js",
+  "keywords": [],
+  "author": "Creador S.A.",
+  "license": "MIT"
+}
